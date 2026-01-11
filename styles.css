@@ -1,0 +1,163 @@
+:root {
+    --blue: #3066BE;
+    --bg: white;
+    --med-brown: #4B2707;
+    --dark-brown: #381D05;
+    --red: #EF626C;
+    --pink: #FFDDE1;
+    --gray-red: #b68383;
+}
+
+body {
+    margin: 0;
+    /* font-family: 'Arial', sans-serif; */
+    background-color: var(--bg);
+}
+
+main {
+    min-height: 88vh;
+}
+
+header {
+    background-color: none;
+    padding: 20px 10px 0 10px;
+}
+
+header>.nav>.nav-link {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: var(--blue);
+}
+
+#hero-section {
+    height: 92vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    background: url("./public/images/blue-pink-brown-stars.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.hero-text {
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    font-size: 1000px;
+    text-align: center;
+    align-items: center;
+    z-index: 0;
+    /* background-color: aqua; */
+}
+
+.hero-text> h1 {
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 4px var(--gray-red);
+    /* background-color: antiquewhite; */
+}
+
+#projects-section {
+    width: 100%;
+    height: 110%;
+    background-color: var(--bg);
+    padding: 50px 0;
+    margin: 0 0 100px 0;
+}
+
+#projects-section > h1 {
+    padding: 40px 0 20px;
+    font-size: 50px;}
+
+.project {
+    width: 100%;
+    margin: 50px 0;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    transition: 0.3s;
+    background-color: inherit;
+    /* border-radius: 20px; */
+}
+
+.project-image {
+    width: 90%;
+    height: 100%;
+    align-self: center;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 30px;
+}
+
+.project-desc {
+    margin: 0 30px;
+    padding: 20px;
+    font-size: 1.2em;
+    align-self: center;
+}
+
+.project-desc > h2 {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.project-desc > p {
+    margin: 20px 0;
+    color: var(--dark-brown);
+}
+
+.project-desc > a.button {
+    background-color: var(--blue);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.project-desc > a.button:hover {
+    background-color: var(--red);
+    color: white;
+    transition: background-color 0.5s;
+}
+
+.tool-tile {
+    display: inline-block;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+footer {
+    padding: 0 10px 20px 10px;
+    background-color: #f8f9fa;
+}
+
+.tool-container {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 0 25px 0;
+}
+
+.social-logo {
+    width: 20px;
+    height: auto;
+    margin: 0 10px;
+    filter: grayscale(100%) brightness(30%);
