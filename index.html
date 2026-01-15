@@ -10,6 +10,8 @@ EMAIL: melindxl@uci.edu
   <meta charset="utf-8">
   <meta name="author" content="Melinda Li">
   <meta name="description" content="Melinda Li's poftfolio website">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
    <!-- you would link to an external stylesheet here! -->
     
     
@@ -27,15 +29,22 @@ EMAIL: melindxl@uci.edu
 
 </head>
 <body class="poppins-regular">
-  <header class="nav justify-content-between">
-      <div class="nav">
-        <a href="index.html" class="nav-link">/məˈlɪndə/</a>
+  <header>
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">/məˈlɪndə/</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#projects-section">projects</a>
+            <a class="nav-link" href="about.html">about</a>
+            <a class="nav-link" href="contact.html">reach-out</a>
+          </div>
+        </div>
       </div>
-      <nav class="nav">
-        <a href="#projects-section" class="nav-link active">projects</a>
-        <a href="about.html" class="nav-link">about</a>
-        <a href="contact.html" class="nav-link">reach-out</a>
-      </nav>
+    </nav>
   </header>
   <p>
     <!-- <a href="http://validator.w3.org/check?uri=referer">
@@ -47,15 +56,15 @@ EMAIL: melindxl@uci.edu
       <div class="hero-image">
         <div class="hero-text d-flex justify-content-center align-items-center">
           <div class="d-flex flex-column align-items-center">
-            <h1 class="hero-bold">melinda li</h1>
-            <p class="hero-regular">software engineering student @uci</p>
+            <h1 class="hero-bold display-1">melinda li</h1>
+            <p class="hero-regular display-6 px-5">software engineering student @ uci</p>
           </div>
         </div>
       </div>
     </section>
 
     <section id="projects-section">
-      <h1 class="text-center darumadrop-one-regular section-title">my projects</h1>
+      <h1 class="text-center darumadrop-one-regular section-title display-2">my projects</h1>
       <div class="container-fluid d-flex flex-wrap align-items-space-around justify-content-center row-gap-5">
 
         <div class="project"> 
@@ -69,8 +78,8 @@ EMAIL: melindxl@uci.edu
               </div>   
               <!-- <div class="col-md-1"></div>  -->
               <div class="col-md-4 project-desc d-flex flex-column align-items-space-between">
-                  <h2 class="darumadrop-one-regular">hidden fi<em>girl</em>ines</h2>
-                  <p>collect female figure-themed smiskis by correctly ordering historical women-centric events!</p>
+                  <h2 class="darumadrop-one-regular display-5">hidden fi<em>girl</em>ines</h2>
+                  <p class="lead">collect female figure-themed smiskis by correctly ordering historical women-centric events!</p>
                   <div class="tool-container">
                     <div class="tool-tile">React.js</div>
                     <div class="tool-tile">JavaScript</div>
@@ -83,10 +92,18 @@ EMAIL: melindxl@uci.edu
         </div>
 
         <div class="project"> 
-            <div class="row g-0 justify-content-center">
-              <div class="col-md-4 project-desc d-flex flex-column align-items-space-between">
-                <h2 class="darumadrop-one-regular">memento memory</h2>
-                <p>a memory game using k-pop photocards!</p>
+            <div class="row g-0 justify-content-center  flex-md-row-reverse">
+              <div class="col-md-6 justify-content-end">
+                <img 
+                  src="./public/images/memento-memory-deco.png"
+                  alt="project image"
+                  class="project-image"
+                >
+              </div>  
+              <!-- <div class="col-md-1"></div> -->
+              <div class="col-md-4 project-desc d-flex flex-column align-items-space-between ">
+                <h2 class="darumadrop-one-regular display-5">memento memory</h2>
+                <p class="lead">a memory game using k-pop photocards!</p>
                 <div class="tool-container">
                     <div class="tool-tile">React.js</div>
                     <div class="tool-tile">JavaScript</div>
@@ -95,14 +112,7 @@ EMAIL: melindxl@uci.edu
                   </div>
                 <a href="https://github.com/melindaahli/mementoMemory" class="button" target="_blank">project repo</a>
               </div>
-              <!-- <div class="col-md-1"></div> -->
-              <div class="col-md-6 justify-content-end">
-                <img 
-                  src="./public/images/memento-memory-deco.png"
-                  alt="project image"
-                  class="project-image"
-                >
-              </div>    
+                
           </div>          
         </div>
 
@@ -117,8 +127,8 @@ EMAIL: melindxl@uci.edu
               </div>    
               <!-- <div class="col-md-1"></div>   -->
               <div class="col-md-4 project-desc d-flex flex-column align-items-space-between">
-                  <h2 class="darumadrop-one-regular">hedgehog trivia</h2>
-                  <p>test your knowledge of hedgehogs with a replayable quick 5-question quiz!</p>
+                  <h2 class="darumadrop-one-regular display-5">hedgehog trivia</h2>
+                  <p class="lead">test your knowledge of hedgehogs with a replayable quick 5-question quiz!</p>
                   <div class="tool-container">
                     <div class="tool-tile">React.js</div>
                     <div class="tool-tile">JavaScript</div>
@@ -137,7 +147,7 @@ EMAIL: melindxl@uci.edu
   <footer>
     <div class="nav justify-content-between">
     <div class="nav">
-      <a href="index.html" class="nav-link disabled">January 2026</a>
+      <!-- <a href="index.html" class="nav-link disabled">January 2026</a> -->
     </div>
     <div class="nav justify-content-end">
       <a class="nav-link" title="GitHub Inc., MIT &lt;http://opensource.org/licenses/mit-license.php&gt;, via Wikimedia Commons" href="https://github.com/melindaahli" target="_blank">

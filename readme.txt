@@ -76,6 +76,8 @@ allowed, but the work that you produce and submit must be your own.
     - https://getbootstrap.com/
     - https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties
     - https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp
+    - https://getbootstrap.com/docs/5.0/components/navbar/
+    - https://stackoverflow.com/questions/27746811/bootstrap-font-scaling-too-small-on-mobile
 
     Hero Section
     - https://www.w3schools.com/cssref/tryit.php?filename=trycss3_background_hero

@@ -10,6 +10,8 @@ EMAIL: melindxl@uci.edu
   <meta charset="utf-8">
   <meta name="author" content="Melinda Li">
   <meta name="description" content="Melinda Li's poftfolio website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!-- you would link to an external stylesheet here! -->
   <link rel="stylesheet" href="styles.css">
     
@@ -24,19 +26,27 @@ EMAIL: melindxl@uci.edu
   <link rel="icon" type="image/png" href="/public/images/brown-star.png">
 </head>
 <body class="poppins-regular">
-  <header class="nav justify-content-between">
-      <div class="nav">
-        <a href="index.html" class="nav-link">/məˈlɪndə/</a>
+  <header>
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">/məˈlɪndə/</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link"  href="index.html#projects-section">projects</a>
+            <a class="nav-link" href="about.html">about</a>
+            <a class="nav-link active" href="contact.html" aria-current="page">reach-out</a>
+          </div>
+        </div>
       </div>
-      <nav class="nav">
-        <a href="index.html#projects-section" class="nav-link">projects</a>
-        <a href="about.html" class="nav-link">about</a>
-        <a href="contact.html" class="nav-link active">reach-out</a>
-      </nav>
+    </nav>
   </header>
+  
   <main id="contact-main" class="pink-bg">
     <!-- <h1 class="text-center darumadrop-one-regular section-title px-5">reach out to me!</h1> -->
-    <div id="socials-bar" class="d-flex container justify-content-around bg-white p-3 rounded-3">
+    <!-- <div id="socials-bar" class="d-flex container-lg justify-content-around bg-white p-3 rounded-3">
       <a class="nav-link" title="GitHub Inc., MIT &lt;http://opensource.org/licenses/mit-license.php&gt;, via Wikimedia Commons" href="https://github.com/melindaahli" target="_blank">
         <img  alt="Octicons-mark-github" class="social-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/512px-Octicons-mark-github.svg.png?20180806170715">
       </a>
@@ -46,9 +56,9 @@ EMAIL: melindxl@uci.edu
       <a class="nav-link" href="" target="_blank">
         <img alt="gmail logo" class="social-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1280px-Gmail_icon_%282020%29.svg.png">
       </a>
-    </div>
-    <form id="contact-form" class="container d-flex flex-column gap-3 mt-4 mb-4 rounded-3">
-        <h2 class="text-center darumadrop-one-regular section-subtitle px-5">reach out to me!</h2>
+    </div> -->
+    <form id="contact-form" class="container-lg d-flex flex-column gap-3 mt-4 mb-4 rounded-3">
+        <h1 class="text-center darumadrop-one-regular section-subtitle px-5 display-4">reach out to me!</h1>
         <label for="name" class="form-label">Name:</label>
         <input type="text" id="name" name="name" placeholder="your name" class="form-control" required>
 
@@ -63,7 +73,7 @@ EMAIL: melindxl@uci.edu
   <footer>
     <div class="nav justify-content-between">
     <div class="nav">
-      <a href="index.html" class="nav-link disabled">January 2026</a>
+      <!-- <a href="index.html" class="nav-link disabled">January 2026</a> -->
     </div>
       <div class="nav justify-content-end">
         <a class="nav-link" title="GitHub Inc., MIT &lt;http://opensource.org/licenses/mit-license.php&gt;, via Wikimedia Commons" href="https://github.com/melindaahli" target="_blank">

@@ -10,6 +10,8 @@ EMAIL: melindxl@uci.edu
   <meta charset="utf-8">
   <meta name="author" content="Melinda Li">
   <meta name="description" content="Melinda Li's poftfolio website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
    <!-- you would link to an external stylesheet here! -->
     <link rel="stylesheet" href="styles.css">
     
@@ -25,15 +27,22 @@ EMAIL: melindxl@uci.edu
 
 </head>
 <body class="poppins-regular">
-  <header class="nav justify-content-between">
-      <div class="nav">
-        <a href="index.html" class="nav-link">/məˈlɪndə/</a>
+  <header>
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">/məˈlɪndə/</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link"href="index.html#projects-section">projects</a>
+            <a class="nav-link active" href="about.html"  aria-current="page">about</a>
+            <a class="nav-link" href="contact.html">reach-out</a>
+          </div>
+        </div>
       </div>
-      <nav class="nav">
-        <a href="index.html#projects-section" class="nav-link">projects</a>
-        <a href="about.html" class="nav-link active">about</a>
-        <a href="contact.html" class="nav-link">reach-out</a>
-      </nav>
+    </nav>
   </header>
   <p>
   </p>
@@ -41,8 +50,8 @@ EMAIL: melindxl@uci.edu
       <section class="quick-intro">
         <div class="waves">
         <div class="d-flex flex-column bg-white px-5">
-          <h1 class="text-center darumadrop-one-regular section-title px-2">get to know me!</h1>
-          <p class="text-center bg-white px-2">
+          <h1 class="text-center darumadrop-one-regular section-title px-2 display-1">get to know me!</h1>
+          <p class="text-center bg-white px-2 lead">
             Helloooooooo!<br>
             I'm Melinda Li, a 2nd-year software engineering student at UC Irvine.
             <br><br>
@@ -54,7 +63,7 @@ EMAIL: melindxl@uci.edu
       </div>
       </section>
       <section class="skills-section py-5">
-        <h2 class="darumadrop-one-regular section-subtitle mb-4 text-center px-5">
+        <h2 class="darumadrop-one-regular section-subtitle mb-4 text-center px-5 display-4">
           skills & technologies
         </h2>
         <div class="marquee-wrapper">
@@ -140,7 +149,7 @@ EMAIL: melindxl@uci.edu
 <footer>
     <div class="nav justify-content-between">
     <div class="nav">
-      <a href="index.html" class="nav-link disabled">January 2026</a>
+      <!-- <a href="index.html" class="nav-link disabled">January 2026</a> -->
     </div>
     <div class="nav justify-content-end">
       <a class="nav-link" title="GitHub Inc., MIT &lt;http://opensource.org/licenses/mit-license.php&gt;, via Wikimedia Commons" href="https://github.com/melindaahli" target="_blank">
